@@ -25,7 +25,7 @@ public class ErrorHandling {
         JsonObject content = JsonObject.empty()
                 .put("firstname", "David")
                 .put("lastname", "Ostrovsky")
-                .put("age", 35)
+                .put("age", 36)
                 .put("aliases", JsonArray.from("hello", "world", "!"));
         JsonDocument doc = JsonDocument.create("_test", content);
         bucket.upsert(doc).subscribe();
