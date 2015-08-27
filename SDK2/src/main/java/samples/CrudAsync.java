@@ -5,6 +5,7 @@ import com.couchbase.client.core.lang.Tuple;
 import com.couchbase.client.core.time.Delay;
 import com.couchbase.client.java.*;
 import com.couchbase.client.java.document.JsonDocument;
+import com.couchbase.client.java.document.JsonStringDocument;
 import com.couchbase.client.java.document.RawJsonDocument;
 import com.couchbase.client.java.document.json.JsonArray;
 import com.couchbase.client.java.document.json.JsonObject;

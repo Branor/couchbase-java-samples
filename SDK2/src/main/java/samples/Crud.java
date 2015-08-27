@@ -26,7 +26,7 @@ public class Crud {
                 .put("lastname", "Ostrovsky")
                 .put("age", 36)
                 .put("aliases", JsonArray.from("hello", "world", "!"));
-        JsonDocument doc = JsonDocument.create("_test", content);
+        JsonDocument doc = JsonDocument.create("_test", 5, content);
         bucket.upsert(doc, PersistTo.MASTER, ReplicateTo.NONE);
 
         StopWatch sw = new StopWatch();

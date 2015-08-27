@@ -11,33 +11,7 @@
     <modules>
         <module>SDK2</module>
         <module>SDK1</module>
+        <module>SDK2.2</module>
     </modules>
 
-    <dependencies>
-        <dependency>
-            <groupId>com.couchbase.client</groupId>
-            <artifactId>couchbase-client</artifactId>
-            <version>LATEST</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.google.code.gson</groupId>
-            <artifactId>gson</artifactId>
-            <version>LATEST</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-            <version>LATEST</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.elasticsearch</groupId>
-            <artifactId>elasticsearch</artifactId>
-            <version>1.0.1</version>
-        </dependency>
-
-    </dependencies>
-    
 </project>

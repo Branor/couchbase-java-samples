@@ -25,13 +25,13 @@ public class QueryNickel {
         Bucket bucket = cluster.openBucket("default", 30, TimeUnit.SECONDS);
 
         // N1QL
-        Observable<AsyncQueryResult> results = bucket.async().query(
-            Query.simple(
-                "SELECT * FROM default"
-            )
-        );
+//        Observable<AsyncQueryResult> results = bucket.async().query(
+//            Query.simple(
+//                "SELECT * FROM default"
+//            )
+//        );
 
-        Observable<AsyncQueryResult> results2 = bucket.async().query(
+        Observable<AsyncQueryResult> results = bucket.async().query(
                 select("*").from("default").where(x("age").between(x(33).and(x(36))))
         );
 
